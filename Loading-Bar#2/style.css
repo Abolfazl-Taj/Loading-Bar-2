@@ -1,0 +1,33 @@
+@keyframes rotate{
+    100%{
+        rotate: 360deg; transform:scale(1.25 , 1.25); background-color: rgb(70, 202, 255);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0, 86, 245);
+    margin: auto;
+    position: relative;
+    top: 100px;
+    animation: linear  alternate rotate 2s infinite;
+}
+.border_1{
+    width: 100%;
+    border: 4px solid rgb(255, 255, 255);
+}
+.border_2{
+    position: absolute;
+    right: 36px;
+    height: 100%;
+    border: 3px solid rgb(255, 255, 255);
+}
